@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Student.h"
+
+@protocol NewStudentDelegate <NSObject>
+
+-(void)onSave:(NSString*)txt;
+-(void)onCancel;
+
+@end
 
 @interface NewStudentController : UIViewController
+
+@property id<NewStudentDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UITextField *iFirst;
+@property (weak, nonatomic) IBOutlet UITextField *iLast;
+@property (weak, nonatomic) IBOutlet UITextField *iPhone;
+
+- (IBAction)cancel:(id)sender;
+- (IBAction)save:(id)sender;
 
 @end

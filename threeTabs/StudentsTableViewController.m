@@ -61,6 +61,20 @@
     return cell;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"NewStudentSegue"]) {
+        NewStudentController* newSVC = segue.destinationViewController;
+        newSVC.delegate = self;
+    }
+}
+
+-(void)onSave:(NewStudentController *)txt{
+    //self.myLabel.text = txt;
+}
+-(void)onCancel{
+    //self.myLabel.text = @"cancel";
+}
+
 /*
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NewStudentController.h"
 
-@interface StudentsTableViewController : UITableViewController
-
+@interface StudentsTableViewController :UIViewController <NewStudentDelegate>
 @end

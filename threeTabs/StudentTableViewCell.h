@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface StudentTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *fname;
 @property (weak, nonatomic) IBOutlet UILabel *lname;

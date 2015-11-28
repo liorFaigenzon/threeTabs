@@ -23,14 +23,76 @@
         <!--NewStudent-->
         <scene sceneID="YM1-W7-bjQ">
             <objects>
-                <viewController id="zCQ-Pf-q6n" userLabel="NewStudent" customClass="DetailsStudentController" sceneMemberID="viewController">
+                <viewController id="zCQ-Pf-q6n" userLabel="NewStudent" customClass="NewStudentController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="add-fZ-Jeq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="MXI-Ei-zST" userLabel="iLast">
+                                <rect key="frame" x="113" y="153" width="167" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="tXC-0E-KcU" userLabel="iPhone">
+                                <rect key="frame" x="113" y="196" width="167" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2bI-C3-qaa">
+                                <rect key="frame" x="20" y="118" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uc1-hr-jxl">
+                                <rect key="frame" x="20" y="157" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s8Z-gQ-tNV">
+                                <rect key="frame" x="20" y="205" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nYB-3T-ErB" userLabel="bSave">
+                                <rect key="frame" x="274" y="76" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save:" destination="zCQ-Pf-q6n" eventType="touchUpInside" id="mO1-84-EuA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="wP4-vh-ISk" userLabel="iFirst">
+                                <rect key="frame" x="113" y="114" width="167" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cQI-lF-4Q4" userLabel="bBack">
+                                <rect key="frame" x="0.0" y="76" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="cancel:" destination="zCQ-Pf-q6n" eventType="touchUpInside" id="g5v-t6-K6T"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="UTq-wX-4Ug" userLabel="NewStudent"/>
                     <navigationItem key="navigationItem" id="sn5-KX-rjT"/>
+                    <connections>
+                        <outlet property="iFirst" destination="wP4-vh-ISk" id="vtS-aY-JA7"/>
+                        <outlet property="iLast" destination="MXI-Ei-zST" id="Ezk-f2-FQz"/>
+                        <outlet property="iPhone" destination="tXC-0E-KcU" id="hEy-s0-Oia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMQ-DW-eSd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,7 +161,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="FYs-no-giK" userLabel="Studnets Controller">
                         <barButtonItem key="rightBarButtonItem" title="add" id="9Oz-T9-y1B" userLabel="Add">
                             <connections>
-                                <segue destination="zCQ-Pf-q6n" kind="push" id="0d2-TU-dFb"/>
+                                <segue destination="zCQ-Pf-q6n" kind="push" identifier="NewStudentSegue" id="0d2-TU-dFb"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

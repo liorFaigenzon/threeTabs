@@ -29,4 +29,17 @@
 }
 */
 
+- (IBAction)cancel:(id)sender {
+    [self.delegate onCancel];
+    //[self dismissViewControllerAnimated:YES completion:nil]
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)save:(id)sender {
+    Student* st = [[Student alloc] init:self.iFirst.text lname:self.iLast.text stId:[NSString stringWithFormat:@"%d",12] phone:self.iPhone.text];
+    [self.delegate onSave:st];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 @end
