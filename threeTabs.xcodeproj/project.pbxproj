@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8478BE491C04E38C00DDB787 /* DetailsStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */; };
+		8478BE4A1C04E38C00DDB787 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE401C04E38C00DDB787 /* Model.m */; };
+		8478BE4B1C04E38C00DDB787 /* NewStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE421C04E38C00DDB787 /* NewStudentController.m */; };
+		8478BE4C1C04E38C00DDB787 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE441C04E38C00DDB787 /* Student.m */; };
+		8478BE4D1C04E38C00DDB787 /* StudentsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE461C04E38C00DDB787 /* StudentsTableViewController.m */; };
+		8478BE4E1C04E38C00DDB787 /* StudentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE481C04E38C00DDB787 /* StudentTableViewCell.m */; };
 		84A881461C04E2CF000948A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A881451C04E2CF000948A8 /* main.m */; };
 		84A881491C04E2CF000948A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A881481C04E2CF000948A8 /* AppDelegate.m */; };
 		84A8814C1C04E2CF000948A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A8814B1C04E2CF000948A8 /* ViewController.m */; };
@@ -35,6 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8478BE3D1C04E38C00DDB787 /* DetailsStudentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsStudentController.h; sourceTree = "<group>"; };
+		8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsStudentController.m; sourceTree = "<group>"; };
+		8478BE3F1C04E38C00DDB787 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		8478BE401C04E38C00DDB787 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		8478BE411C04E38C00DDB787 /* NewStudentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewStudentController.h; sourceTree = "<group>"; };
+		8478BE421C04E38C00DDB787 /* NewStudentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewStudentController.m; sourceTree = "<group>"; };
+		8478BE431C04E38C00DDB787 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		8478BE441C04E38C00DDB787 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		8478BE451C04E38C00DDB787 /* StudentsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsTableViewController.h; sourceTree = "<group>"; };
+		8478BE461C04E38C00DDB787 /* StudentsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsTableViewController.m; sourceTree = "<group>"; };
+		8478BE471C04E38C00DDB787 /* StudentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentTableViewCell.h; sourceTree = "<group>"; };
+		8478BE481C04E38C00DDB787 /* StudentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentTableViewCell.m; sourceTree = "<group>"; };
 		84A881411C04E2CF000948A8 /* threeTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = threeTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A881451C04E2CF000948A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84A881471C04E2CF000948A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +119,18 @@
 		84A881431C04E2CF000948A8 /* threeTabs */ = {
 			isa = PBXGroup;
 			children = (
+				8478BE3D1C04E38C00DDB787 /* DetailsStudentController.h */,
+				8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */,
+				8478BE3F1C04E38C00DDB787 /* Model.h */,
+				8478BE401C04E38C00DDB787 /* Model.m */,
+				8478BE411C04E38C00DDB787 /* NewStudentController.h */,
+				8478BE421C04E38C00DDB787 /* NewStudentController.m */,
+				8478BE431C04E38C00DDB787 /* Student.h */,
+				8478BE441C04E38C00DDB787 /* Student.m */,
+				8478BE451C04E38C00DDB787 /* StudentsTableViewController.h */,
+				8478BE461C04E38C00DDB787 /* StudentsTableViewController.m */,
+				8478BE471C04E38C00DDB787 /* StudentTableViewCell.h */,
+				8478BE481C04E38C00DDB787 /* StudentTableViewCell.m */,
 				84A881471C04E2CF000948A8 /* AppDelegate.h */,
 				84A881481C04E2CF000948A8 /* AppDelegate.m */,
 				84A8814A1C04E2CF000948A8 /* ViewController.h */,
@@ -270,9 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8478BE4B1C04E38C00DDB787 /* NewStudentController.m in Sources */,
+				8478BE4E1C04E38C00DDB787 /* StudentTableViewCell.m in Sources */,
+				8478BE4D1C04E38C00DDB787 /* StudentsTableViewController.m in Sources */,
 				84A8814C1C04E2CF000948A8 /* ViewController.m in Sources */,
 				84A881491C04E2CF000948A8 /* AppDelegate.m in Sources */,
+				8478BE491C04E38C00DDB787 /* DetailsStudentController.m in Sources */,
+				8478BE4C1C04E38C00DDB787 /* Student.m in Sources */,
 				84A881461C04E2CF000948A8 /* main.m in Sources */,
+				8478BE4A1C04E38C00DDB787 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +534,7 @@
 				84A881701C04E2D0000948A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A881711C04E2D0000948A8 /* Build configuration list for PBXNativeTarget "threeTabsTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +543,7 @@
 				84A881731C04E2D0000948A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A881741C04E2D0000948A8 /* Build configuration list for PBXNativeTarget "threeTabsUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +552,7 @@
 				84A881761C04E2D0000948A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
