@@ -46,7 +46,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    StudentTableViewCell *cell = (StudentTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+    //StudentTableViewCell *cell = (StudentTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
 
 }
 
@@ -76,8 +76,12 @@
     }
     
     if ([segue.identifier isEqualToString:@"detailStudentSegue"]) {
-        DetailsStudentController* newSVC = segue.destinationViewController;
-        newSVC.fname = @"lior:";
+        DetailsStudentController* DetailSVC = segue.destinationViewController;
+        StudentTableViewCell *cell = (StudentTableViewCell*)sender;
+        
+        Student* st = [[Student alloc] init:cell.fname.text lname:cell.lname.text stId:[NSString stringWithFormat:@"%@",cell.Id.text] phone:cell.phone.text];
+
+        DetailSVC.DetailStudent = st;
     }
 }
 

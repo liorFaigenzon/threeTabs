@@ -16,10 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.first.text = self.fname;
-    self.last.text = self.lname;
-    self.phone.text = self.phonet;
-    self.ids.text = self.stId;
+    self.first.text = self.DetailStudent.fname;
+    self.last.text = self.DetailStudent.lname;
+    self.phone.text = self.DetailStudent.phone;
+    self.ids.text = self.DetailStudent.stId;
 }
 
 - (void)didReceiveMemoryWarning {
