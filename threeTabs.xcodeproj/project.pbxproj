@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7B20D51C0BA888004A8BEC /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B20D41C0BA888004A8BEC /* AboutViewController.m */; };
 		8478BE491C04E38C00DDB787 /* DetailsStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */; };
 		8478BE4A1C04E38C00DDB787 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE401C04E38C00DDB787 /* Model.m */; };
 		8478BE4B1C04E38C00DDB787 /* NewStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE421C04E38C00DDB787 /* NewStudentController.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B7B20D31C0BA888004A8BEC /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		7B7B20D41C0BA888004A8BEC /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		8478BE3D1C04E38C00DDB787 /* DetailsStudentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsStudentController.h; sourceTree = "<group>"; };
 		8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsStudentController.m; sourceTree = "<group>"; };
 		8478BE3F1C04E38C00DDB787 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				84A881521C04E2D0000948A8 /* LaunchScreen.storyboard */,
 				84A881551C04E2D0000948A8 /* Info.plist */,
 				84A881441C04E2CF000948A8 /* Supporting Files */,
+				7B7B20D31C0BA888004A8BEC /* AboutViewController.h */,
+				7B7B20D41C0BA888004A8BEC /* AboutViewController.m */,
 			);
 			path = threeTabs;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				84A8814C1C04E2CF000948A8 /* ViewController.m in Sources */,
 				84A881491C04E2CF000948A8 /* AppDelegate.m in Sources */,
 				8478BE491C04E38C00DDB787 /* DetailsStudentController.m in Sources */,
+				7B7B20D51C0BA888004A8BEC /* AboutViewController.m in Sources */,
 				8478BE4C1C04E38C00DDB787 /* Student.m in Sources */,
 				84A881461C04E2CF000948A8 /* main.m in Sources */,
 				8478BE4A1C04E38C00DDB787 /* Model.m in Sources */,
