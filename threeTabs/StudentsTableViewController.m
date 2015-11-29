@@ -12,18 +12,16 @@
 #import "DetailsStudentController.h"
 
 
-@interface StudentsTableViewController (){
-    NSArray* data;
-}
 
-@end
+
+
 
 @implementation StudentsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    data = [[Model instance] getAllStudents];
+    self.data = [[Model instance] getAllStudents];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -31,6 +29,31 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:YES];
+    if (editing) {
+       // addButton.enabled = NO;
+    } else {
+        //addButton.enabled = YES;
+    }
+}
+
+
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    // If row is deleted, remove it from the list.
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //[[UIApplication sharedApplication] delegate] *controller = (self.data *)[[UIApplication sharedApplication] delegate];
+        //[controller removeObjectFromListAtIndex:indexPath.row];
+        //[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        [[Model instance] deleteStudent:(Student*)[self.data objectAtIndex:indexPath.row]];
+        [self.tableView reloadData];
+        //[self.data :indexPath.row];
+    }
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -50,16 +73,18 @@
 
 }
 
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return data.count;
+    return self.data.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     StudentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"studentCell" forIndexPath:indexPath];
     
-    Student* st = [data objectAtIndex:indexPath.row];
+    Student* st = [self.data objectAtIndex:indexPath.row];
     
     cell.fname.text = st.fname;
     cell.lname.text = st.lname;
