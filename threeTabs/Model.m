@@ -31,7 +31,7 @@ static Model* instance = nil;
     self = [super init];
     if (self) {
         students = [[NSMutableArray alloc] init];
-        for (int i=0; i<30; i++) {
+        for (int i=0; i<5; i++) {
             Student* st = [[Student alloc] init:@"DUDU" lname:@"Cohen" stId:[NSString stringWithFormat:@"%d",i] phone:@"asdfasdf"];
             [students addObject:st];
         }

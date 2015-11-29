@@ -10,4 +10,5 @@
 #import "NewStudentController.h"
 
 @interface StudentsTableViewController :UIViewController <NewStudentDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end

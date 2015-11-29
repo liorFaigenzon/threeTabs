@@ -8,13 +8,50 @@
         <!--Details-->
         <scene sceneID="Gy9-7V-r1X">
             <objects>
-                <viewController id="Zuv-Fg-6d8" userLabel="Details" customClass="NewStudentController" sceneMemberID="viewController">
+                <viewController id="Zuv-Fg-6d8" userLabel="Details" customClass="DetailsStudentController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iJ8-fD-mAA">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qdK-1y-MC1">
+                                <rect key="frame" x="106" y="64" width="42" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TWL-0C-TSz">
+                                <rect key="frame" x="101" y="129" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d9O-3M-Ph4">
+                                <rect key="frame" x="101" y="165" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iPO-2b-Ac4">
+                                <rect key="frame" x="112" y="218" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.10588236153125763" green="0.63921570777893066" blue="0.38039219379425049" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="L9f-XJ-qsV" userLabel="Details"/>
+                    <navigationItem key="navigationItem" id="MGm-JI-OCa"/>
+                    <connections>
+                        <outlet property="first" destination="qdK-1y-MC1" id="NmY-zm-Esg"/>
+                        <outlet property="ids" destination="iPO-2b-Ac4" id="9dt-rD-haU"/>
+                        <outlet property="last" destination="TWL-0C-TSz" id="szc-Tb-8yT"/>
+                        <outlet property="phone" destination="d9O-3M-Ph4" id="ChV-4h-AE9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19y-bp-5Ul" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,11 +144,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="studentCell" rowHeight="62" id="Bg1-Xc-m18" userLabel="studentCell" customClass="StudentTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="studentCell" rowHeight="62" id="Bg1-Xc-m18" userLabel="studentCell" customClass="StudentTableViewCell">
                                 <rect key="frame" x="0.0" y="92" width="320" height="62"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bg1-Xc-m18" id="5cz-Ys-TcH">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="61"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rs4-DT-6fB" userLabel="fName">
@@ -149,6 +186,7 @@
                                     <outlet property="fname" destination="rs4-DT-6fB" id="Xsk-qd-HV3"/>
                                     <outlet property="lname" destination="ZKd-ZV-e5d" id="8Po-Qm-F77"/>
                                     <outlet property="phone" destination="9Up-DJ-FfZ" id="Opn-V9-hDn"/>
+                                    <segue destination="Zuv-Fg-6d8" kind="push" identifier="detailStudentSegue" id="fUs-aV-X30"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -166,6 +204,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="0rT-hl-9R0" id="p4K-Ce-vkR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmI-MH-GwB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -207,4 +248,7 @@
             <point key="canvasLocation" x="-64" y="-244"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fUs-aV-X30"/>
+    </inferredMetricsTieBreakers>
 </document>

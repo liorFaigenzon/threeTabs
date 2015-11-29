@@ -9,5 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailsStudentController : UIViewController
+@property NSString* fname;
+@property NSString* lname;
+@property NSString* stId;
+@property NSString* phonet;
+
+@property (weak, nonatomic) IBOutlet UILabel *first;
+@property (weak, nonatomic) IBOutlet UILabel *last;
+@property (weak, nonatomic) IBOutlet UILabel *phone;
+@property (weak, nonatomic) IBOutlet UILabel *ids;
 
 @end

@@ -11,7 +11,7 @@
 
 @protocol NewStudentDelegate <NSObject>
 
--(void)onSave:(NSString*)txt;
+-(void)onSave:(Student*)txt;
 -(void)onCancel;
 
 @end

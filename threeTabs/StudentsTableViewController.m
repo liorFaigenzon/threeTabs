@@ -9,6 +9,8 @@
 #import "StudentsTableViewController.h"
 #import "Model.h"
 #import "StudentTableViewCell.h"
+#import "DetailsStudentController.h"
+
 
 @interface StudentsTableViewController (){
     NSArray* data;
@@ -27,7 +29,7 @@
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,6 +42,12 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    StudentTableViewCell *cell = (StudentTableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
+
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -66,10 +74,16 @@
         NewStudentController* newSVC = segue.destinationViewController;
         newSVC.delegate = self;
     }
+    
+    if ([segue.identifier isEqualToString:@"detailStudentSegue"]) {
+        DetailsStudentController* newSVC = segue.destinationViewController;
+        newSVC.fname = @"lior:";
+    }
 }
 
--(void)onSave:(NewStudentController *)txt{
-    //self.myLabel.text = txt;
+-(void)onSave:(Student *)std{
+    [[Model instance] addStudent:std];
+    [self.tableView reloadData];
 }
 -(void)onCancel{
     //self.myLabel.text = @"cancel";

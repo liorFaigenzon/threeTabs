@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.first.text = self.fname;
+    self.last.text = self.lname;
+    self.phone.text = self.phonet;
+    self.ids.text = self.stId;
 }
 
 - (void)didReceiveMemoryWarning {
