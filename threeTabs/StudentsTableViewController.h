@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "NewStudentController.h"
 
-@interface StudentsTableViewController :UIViewController <NewStudentDelegate,UITableViewDelegate, UITableViewDataSource>
+@interface StudentsTableViewController :UIViewController <NewStudentDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSArray* data;
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @end

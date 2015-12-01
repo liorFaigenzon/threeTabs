@@ -13,7 +13,7 @@
 @interface StudentTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *fname;
 @property (weak, nonatomic) IBOutlet UILabel *lname;
-@property (weak, nonatomic) IBOutlet UILabel *Id;
-@property (weak, nonatomic) IBOutlet UILabel *phone;
+
+@property NSString* Id;
 
 @end

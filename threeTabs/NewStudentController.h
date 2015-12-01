@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Student.h"
+#import "Model.h"
 
 @protocol NewStudentDelegate <NSObject>
 
@@ -25,5 +26,7 @@
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)save:(id)sender;
+- (IBAction)onSave:(id)sender;
+- (IBAction)clear:(id)sender;
 
 @end

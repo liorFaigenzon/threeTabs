@@ -11,11 +11,6 @@
 #import "StudentTableViewCell.h"
 #import "DetailsStudentController.h"
 
-
-
-
-
-
 @implementation StudentsTableViewController
 
 - (void)viewDidLoad {
@@ -29,17 +24,16 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
      self.navigationItem.leftBarButtonItem = self.editButtonItem;
 }
+
 - (void)setEditing:(BOOL)editing animated:(BOOL)animated {
     [super setEditing:editing animated:animated];
-    [self.tableView setEditing:editing animated:YES];
+    [self.tableView setEditing:editing animated:animated];
     if (editing) {
        // addButton.enabled = NO;
     } else {
         //addButton.enabled = YES;
     }
 }
-
-
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     // If row is deleted, remove it from the list.
@@ -52,8 +46,6 @@
         //[self.data :indexPath.row];
     }
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -83,13 +75,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     StudentTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"studentCell" forIndexPath:indexPath];
-    
     Student* st = [self.data objectAtIndex:indexPath.row];
     
+    cell.Id = st.stId;
     cell.fname.text = st.fname;
     cell.lname.text = st.lname;
-    cell.Id.text = st.stId;
-    cell.phone.text = st.phone;
     
     return cell;
 }
@@ -104,14 +94,14 @@
         DetailsStudentController* DetailSVC = segue.destinationViewController;
         StudentTableViewCell *cell = (StudentTableViewCell*)sender;
         
-        Student* st = [[Student alloc] init:cell.fname.text lname:cell.lname.text stId:[NSString stringWithFormat:@"%@",cell.Id.text] phone:cell.phone.text];
+        Student* st = [[Model instance] getStudent:cell.Id];
 
         DetailSVC.DetailStudent = st;
     }
 }
 
 -(void)onSave:(Student *)std{
-    [[Model instance] addStudent:std];
+    [[Model instance] addStudent:std.fname lastname:std.lname phone:std.phone];
     [self.tableView reloadData];
 }
 -(void)onCancel{

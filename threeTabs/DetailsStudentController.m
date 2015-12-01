@@ -16,10 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.first.text = self.DetailStudent.fname;
-    self.last.text = self.DetailStudent.lname;
-    self.phone.text = self.DetailStudent.phone;
-    self.ids.text = self.DetailStudent.stId;
+    self.first.text = [NSString stringWithFormat:@"First Name: %@", self.DetailStudent.fname];
+    self.last.text = [NSString stringWithFormat:@"Last Name: %@", self.DetailStudent.lname];
+    self.ids.text = [NSString stringWithFormat:@"ID: %@", self.DetailStudent.stId];
+    self.phone.text = [NSString stringWithFormat:@"Phone: %@", self.DetailStudent.phone];
 }
 
 - (void)didReceiveMemoryWarning {

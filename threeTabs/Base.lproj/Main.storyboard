@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="C4E-Wu-JhE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="C4E-Wu-JhE">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--About-->
         <scene sceneID="C0h-yn-a8S">
             <objects>
                 <viewController id="Djs-yG-6ZA" sceneMemberID="viewController">
@@ -13,8 +13,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is a demo app for Assignment 4" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lQd-NN-STS">
-                                <rect key="frame" x="-2" y="82" width="324" height="91"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app is a demo app for Assignment 4" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lQd-NN-STS">
+                                <rect key="frame" x="25" y="107" width="254" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -25,7 +25,7 @@
                         <animations/>
                         <color key="backgroundColor" red="0.14003030572117084" green="0.68813399869109948" blue="0.35900954984958167" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="S25-aI-K9p"/>
+                    <tabBarItem key="tabBarItem" title="About" id="S25-aI-K9p"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Qe-pN-Q4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,7 @@
                         <color key="backgroundColor" red="0.10588236153125763" green="0.63921570777893066" blue="0.38039219379425049" alpha="1" colorSpace="deviceRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="L9f-XJ-qsV" userLabel="Details"/>
-                    <navigationItem key="navigationItem" id="MGm-JI-OCa"/>
+                    <navigationItem key="navigationItem" title="Student Details" id="MGm-JI-OCa"/>
                     <connections>
                         <outlet property="first" destination="qdK-1y-MC1" id="NmY-zm-Esg"/>
                         <outlet property="ids" destination="iPO-2b-Ac4" id="9dt-rD-haU"/>
@@ -97,21 +97,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="MXI-Ei-zST" userLabel="iLast">
-                                <rect key="frame" x="113" y="153" width="167" height="30"/>
+                                <rect key="frame" x="118" y="126" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="tXC-0E-KcU" userLabel="iPhone">
-                                <rect key="frame" x="113" y="196" width="167" height="30"/>
+                                <rect key="frame" x="118" y="169" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2bI-C3-qaa">
-                                <rect key="frame" x="20" y="118" width="95" height="21"/>
+                                <rect key="frame" x="25" y="91" width="95" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -119,7 +119,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uc1-hr-jxl">
-                                <rect key="frame" x="20" y="157" width="95" height="21"/>
+                                <rect key="frame" x="25" y="130" width="95" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -127,36 +127,36 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s8Z-gQ-tNV">
-                                <rect key="frame" x="20" y="205" width="74" height="21"/>
+                                <rect key="frame" x="25" y="178" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nYB-3T-ErB" userLabel="bSave">
-                                <rect key="frame" x="274" y="76" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="save:" destination="zCQ-Pf-q6n" eventType="touchUpInside" id="mO1-84-EuA"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="wP4-vh-ISk" userLabel="iFirst">
-                                <rect key="frame" x="113" y="114" width="167" height="30"/>
+                                <rect key="frame" x="118" y="87" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cQI-lF-4Q4" userLabel="bBack">
-                                <rect key="frame" x="0.0" y="76" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ChS-Ao-waJ">
+                                <rect key="frame" x="53" y="242" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Clear"/>
                                 <connections>
-                                    <action selector="cancel:" destination="zCQ-Pf-q6n" eventType="touchUpInside" id="g5v-t6-K6T"/>
+                                    <action selector="clear:" destination="zCQ-Pf-q6n" eventType="touchUpInside" id="ztP-Rz-Lqv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HFv-77-QLq">
+                                <rect key="frame" x="209" y="242" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onSave:" destination="zCQ-Pf-q6n" eventType="touchUpInside" id="Oqw-gQ-kGl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -164,7 +164,20 @@
                         <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="UTq-wX-4Ug" userLabel="NewStudent"/>
-                    <navigationItem key="navigationItem" id="sn5-KX-rjT"/>
+                    <navigationItem key="navigationItem" title="New Student" id="sn5-KX-rjT">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="eGP-bQ-5Uc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cQI-lF-4Q4" userLabel="bBack">
+                                <rect key="frame" x="16" y="7" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="cancel:" destination="zCQ-Pf-q6n" eventType="touchUpInside" id="g5v-t6-K6T"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="iFirst" destination="wP4-vh-ISk" id="vtS-aY-JA7"/>
                         <outlet property="iLast" destination="MXI-Ei-zST" id="Ezk-f2-FQz"/>
@@ -179,37 +192,21 @@
         <scene sceneID="wYq-b4-R0N">
             <objects>
                 <tableViewController id="dW9-LR-a8K" userLabel="Students" customClass="StudentsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="62" sectionHeaderHeight="28" sectionFooterHeight="28" id="0rT-hl-9R0">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="42" sectionHeaderHeight="28" sectionFooterHeight="28" id="0rT-hl-9R0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="studentCell" rowHeight="62" id="Bg1-Xc-m18" userLabel="studentCell" customClass="StudentTableViewCell">
-                                <rect key="frame" x="0.0" y="92" width="320" height="62"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="studentCell" rowHeight="42" id="Bg1-Xc-m18" userLabel="studentCell" customClass="StudentTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bg1-Xc-m18" id="5cz-Ys-TcH">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="61"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="41.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rs4-DT-6fB" userLabel="fName">
-                                            <rect key="frame" x="52" y="3" width="95" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Up-DJ-FfZ" userLabel="Phone">
-                                            <rect key="frame" x="174" y="26" width="87" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <animations/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="izu-Qs-Ijf" userLabel="Id">
-                                            <rect key="frame" x="174" y="3" width="98" height="21"/>
+                                            <rect key="frame" x="22" y="10" width="95" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -217,7 +214,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZKd-ZV-e5d" userLabel="lName">
-                                            <rect key="frame" x="52" y="26" width="90" height="21"/>
+                                            <rect key="frame" x="141" y="10" width="90" height="21"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -229,10 +226,8 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <connections>
-                                    <outlet property="Id" destination="izu-Qs-Ijf" id="M6p-Kd-iUZ"/>
                                     <outlet property="fname" destination="rs4-DT-6fB" id="Xsk-qd-HV3"/>
                                     <outlet property="lname" destination="ZKd-ZV-e5d" id="8Po-Qm-F77"/>
-                                    <outlet property="phone" destination="9Up-DJ-FfZ" id="Opn-V9-hDn"/>
                                     <segue destination="Zuv-Fg-6d8" kind="push" identifier="detailStudentSegue" id="fUs-aV-X30"/>
                                 </connections>
                             </tableViewCell>
@@ -243,8 +238,8 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="FYs-no-giK" userLabel="Studnets Controller">
-                        <barButtonItem key="rightBarButtonItem" title="add" id="9Oz-T9-y1B" userLabel="Add">
+                    <navigationItem key="navigationItem" title="Student Details" id="FYs-no-giK" userLabel="Studnets Controller">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="9Oz-T9-y1B" userLabel="Add">
                             <connections>
                                 <segue destination="zCQ-Pf-q6n" kind="push" identifier="NewStudentSegue" id="0d2-TU-dFb"/>
                             </connections>
@@ -259,11 +254,11 @@
             </objects>
             <point key="canvasLocation" x="760" y="-292"/>
         </scene>
-        <!--Item-->
+        <!--Students-->
         <scene sceneID="bUW-1u-idx">
             <objects>
                 <navigationController id="B6F-72-Ury" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="heL-aZ-Ilr"/>
+                    <tabBarItem key="tabBarItem" title="Students" image="StudentsItem.png" id="heL-aZ-Ilr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H1q-eN-7VU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -297,4 +292,7 @@
             <point key="canvasLocation" x="-158" y="-292"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="StudentsItem.png" width="16" height="16"/>
+    </resources>
 </document>

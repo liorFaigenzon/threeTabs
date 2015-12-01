@@ -15,6 +15,7 @@
 
 
 -(void)addStudent:(Student*)st;
+-(void)addStudent:(NSString*)fname lastname:(NSString*)lname phone:(NSString*)phone;
 -(Student*)getStudent:(NSString*)stId;
 -(void)deleteStudent:(Student*)st;
 -(NSArray*)getAllStudents;

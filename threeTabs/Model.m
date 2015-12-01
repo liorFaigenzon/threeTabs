@@ -31,7 +31,7 @@ static Model* instance = nil;
     self = [super init];
     if (self) {
         students = [[NSMutableArray alloc] init];
-        for (int i=0; i<5; i++) {
+        for (int i=1; i<6; i++) {
             Student* st = [[Student alloc] init:@"DUDU" lname:@"Cohen" stId:[NSString stringWithFormat:@"%d",i] phone:@"asdfasdf"];
             [students addObject:st];
         }
@@ -42,12 +42,39 @@ static Model* instance = nil;
 -(void)addStudent:(Student*)st{
     [students addObject:st];
 }
--(Student*)getStudent:(NSString*)stId{
-    return nil;
+
+-(void)addStudent:(NSString*)fname lastname:(NSString*)lname phone:(NSString*)phone{
+    Student* newStudent;
+    NSInteger nMaxID = -1;
+    
+    // Find the student with the max id
+    for (Student* curr in students)
+    {
+        if (curr.stId.integerValue > nMaxID)
+            nMaxID = curr.stId.integerValue;
+    }
+    
+    newStudent = [[Student alloc] init:fname lname:lname stId:[NSString stringWithFormat:@"%ld", nMaxID + 1] phone:phone];
+    [students addObject:newStudent];
 }
+
+
+-(Student*)getStudent:(NSString*)stId{
+    Student* std;
+    
+    for (Student* curr in students)
+    {
+        if (curr.stId == stId)
+            std = curr;
+    }
+    
+    return std;
+}
+
 -(void)deleteStudent:(Student*)st{
     [students removeObject:st];
 }
+
 -(NSArray*)getAllStudents{
     return students;
 }
