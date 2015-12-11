@@ -10,6 +10,12 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIView *ViewContainer;
+
+
+@end
+
+@interface MyCustomSeague:UIStoryboardSegue
 
 @end
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7B7B20D51C0BA888004A8BEC /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B20D41C0BA888004A8BEC /* AboutViewController.m */; };
 		7BAC33DB1C1ADEFB00930C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC33DD1C1ADEFB00930C73 /* Main.storyboard */; };
+		7BAC33DF1C1B1B0C00930C73 /* cameraTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC33DE1C1B1B0C00930C73 /* cameraTab.png */; };
 		8478BE491C04E38C00DDB787 /* DetailsStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */; };
 		8478BE4A1C04E38C00DDB787 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE401C04E38C00DDB787 /* Model.m */; };
 		8478BE4B1C04E38C00DDB787 /* NewStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE421C04E38C00DDB787 /* NewStudentController.m */; };
@@ -45,6 +46,7 @@
 		7B7B20D31C0BA888004A8BEC /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		7B7B20D41C0BA888004A8BEC /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		7BAC33DC1C1ADEFB00930C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BAC33DE1C1B1B0C00930C73 /* cameraTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraTab.png; sourceTree = "<group>"; };
 		8478BE3D1C04E38C00DDB787 /* DetailsStudentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsStudentController.h; sourceTree = "<group>"; };
 		8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsStudentController.m; sourceTree = "<group>"; };
 		8478BE3F1C04E38C00DDB787 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				7BAC33DD1C1ADEFB00930C73 /* Main.storyboard */,
 				84A881521C04E2D0000948A8 /* LaunchScreen.storyboard */,
 				84A881551C04E2D0000948A8 /* Info.plist */,
+				7BAC33DE1C1B1B0C00930C73 /* cameraTab.png */,
 				84A881441C04E2CF000948A8 /* Supporting Files */,
 				7B7B20D31C0BA888004A8BEC /* AboutViewController.h */,
 				7B7B20D41C0BA888004A8BEC /* AboutViewController.m */,
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BAC33DF1C1B1B0C00930C73 /* cameraTab.png in Resources */,
 				7BAC33DB1C1ADEFB00930C73 /* Main.storyboard in Resources */,
 				84A881541C04E2D0000948A8 /* LaunchScreen.storyboard in Resources */,
 				84A881511C04E2CF000948A8 /* Assets.xcassets in Resources */,
