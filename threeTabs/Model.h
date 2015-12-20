@@ -9,15 +9,23 @@
 #import <Foundation/Foundation.h>
 #import "Student.h"
 
-@interface Model : NSObject
 
-+(Model*)instance;
 
+@protocol ModelProtocol <NSObject>
 
 -(void)addStudent:(Student*)st;
--(void)addStudent:(NSString*)fname lastname:(NSString*)lname phone:(NSString*)phone;
 -(Student*)getStudent:(NSString*)stId;
 -(void)deleteStudent:(Student*)st;
 -(NSArray*)getAllStudents;
+
+@end
+
+@interface Model : NSObject<ModelProtocol>{
+    id<ModelProtocol> modelImpl;
+}
+
+
+
++(Model*)instance;
 
 @end

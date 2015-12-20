@@ -10,6 +10,9 @@
 		7B7B20D51C0BA888004A8BEC /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B20D41C0BA888004A8BEC /* AboutViewController.m */; };
 		7BAC33DB1C1ADEFB00930C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC33DD1C1ADEFB00930C73 /* Main.storyboard */; };
 		7BAC33DF1C1B1B0C00930C73 /* cameraTab.png in Resources */ = {isa = PBXBuildFile; fileRef = 7BAC33DE1C1B1B0C00930C73 /* cameraTab.png */; };
+		8412FC461C1C893F00B855C4 /* StudentSql.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412FC441C1C893F00B855C4 /* StudentSql.m */; };
+		8412FC471C1C893F00B855C4 /* ModelSql.m in Sources */ = {isa = PBXBuildFile; fileRef = 8412FC451C1C893F00B855C4 /* ModelSql.m */; };
+		8412FC491C1C89FB00B855C4 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8412FC481C1C89FB00B855C4 /* libsqlite3.tbd */; };
 		8478BE491C04E38C00DDB787 /* DetailsStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */; };
 		8478BE4A1C04E38C00DDB787 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE401C04E38C00DDB787 /* Model.m */; };
 		8478BE4B1C04E38C00DDB787 /* NewStudentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478BE421C04E38C00DDB787 /* NewStudentController.m */; };
@@ -47,6 +50,11 @@
 		7B7B20D41C0BA888004A8BEC /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		7BAC33DC1C1ADEFB00930C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BAC33DE1C1B1B0C00930C73 /* cameraTab.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameraTab.png; sourceTree = "<group>"; };
+		8412FC421C1C893F00B855C4 /* StudentSql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentSql.h; sourceTree = "<group>"; };
+		8412FC431C1C893F00B855C4 /* ModelSql.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelSql.h; sourceTree = "<group>"; };
+		8412FC441C1C893F00B855C4 /* StudentSql.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentSql.m; sourceTree = "<group>"; };
+		8412FC451C1C893F00B855C4 /* ModelSql.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelSql.m; sourceTree = "<group>"; };
+		8412FC481C1C89FB00B855C4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		8478BE3D1C04E38C00DDB787 /* DetailsStudentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsStudentController.h; sourceTree = "<group>"; };
 		8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsStudentController.m; sourceTree = "<group>"; };
 		8478BE3F1C04E38C00DDB787 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
@@ -81,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8412FC491C1C89FB00B855C4 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +113,7 @@
 		84A881381C04E2CF000948A8 = {
 			isa = PBXGroup;
 			children = (
+				8412FC481C1C89FB00B855C4 /* libsqlite3.tbd */,
 				84A881431C04E2CF000948A8 /* threeTabs */,
 				84A8815D1C04E2D0000948A8 /* threeTabsTests */,
 				84A881681C04E2D0000948A8 /* threeTabsUITests */,
@@ -124,6 +134,10 @@
 		84A881431C04E2CF000948A8 /* threeTabs */ = {
 			isa = PBXGroup;
 			children = (
+				8412FC421C1C893F00B855C4 /* StudentSql.h */,
+				8412FC431C1C893F00B855C4 /* ModelSql.h */,
+				8412FC441C1C893F00B855C4 /* StudentSql.m */,
+				8412FC451C1C893F00B855C4 /* ModelSql.m */,
 				8478BE3D1C04E38C00DDB787 /* DetailsStudentController.h */,
 				8478BE3E1C04E38C00DDB787 /* DetailsStudentController.m */,
 				8478BE3F1C04E38C00DDB787 /* Model.h */,
@@ -312,8 +326,10 @@
 			files = (
 				8478BE4B1C04E38C00DDB787 /* NewStudentController.m in Sources */,
 				8478BE4E1C04E38C00DDB787 /* StudentTableViewCell.m in Sources */,
+				8412FC471C1C893F00B855C4 /* ModelSql.m in Sources */,
 				8478BE4D1C04E38C00DDB787 /* StudentsTableViewController.m in Sources */,
 				84A8814C1C04E2CF000948A8 /* ViewController.m in Sources */,
+				8412FC461C1C893F00B855C4 /* StudentSql.m in Sources */,
 				84A881491C04E2CF000948A8 /* AppDelegate.m in Sources */,
 				8478BE491C04E38C00DDB787 /* DetailsStudentController.m in Sources */,
 				7B7B20D51C0BA888004A8BEC /* AboutViewController.m in Sources */,

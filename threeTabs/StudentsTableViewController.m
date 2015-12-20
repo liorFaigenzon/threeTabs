@@ -38,12 +38,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     // If row is deleted, remove it from the list.
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        //[[UIApplication sharedApplication] delegate] *controller = (self.data *)[[UIApplication sharedApplication] delegate];
-        //[controller removeObjectFromListAtIndex:indexPath.row];
-        //[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
         [[Model instance] deleteStudent:(Student*)[self.data objectAtIndex:indexPath.row]];
         [self.tableView reloadData];
-        //[self.data :indexPath.row];
     }
 }
 
@@ -100,7 +96,7 @@
 }
 
 -(void)onSave:(Student *)std{
-    [[Model instance] addStudent:std.fname lastname:std.lname phone:std.phone];
+    [[Model instance] addStudent:std];
     [self.tableView reloadData];
 }
 -(void)onCancel{
